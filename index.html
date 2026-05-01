@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
-
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -119,8 +117,6 @@ header p { color: #ddd; }
     gap: 10px;
 }
 
-.contact span { font-size: 16px; }
-
 .viber { background:#665CAC; }
 .telegram { background:#0088cc; }
 .call { background:#e63946; }
@@ -145,13 +141,19 @@ header p { color: #ddd; }
 <div class="contact">
 
 <a class="viber" href="viber://chat?number=380661460537"
-onclick="fbq('track','Contact'); fbq('track','Lead'); fbq('trackCustom','ViberClick'); startQualityLead();"> <span>📱</span> Viber </a>
+onclick="fbq('track','Contact');">
+📱 Viber
+</a>
 
 <a class="telegram" href="https://t.me/spirt555"
-onclick="fbq('track','Contact'); fbq('track','Lead'); fbq('trackCustom','TelegramClick'); startQualityLead();"> <span>✈️</span> Telegram </a>
+onclick="fbq('track','Lead',{content_name:'Telegram Order'});">
+✈️ Telegram
+</a>
 
 <a class="call" href="tel:0661460537"
-onclick="fbq('track','Contact'); fbq('track','Lead'); fbq('trackCustom','CallClick'); startQualityLead();"> <span>📞</span> Зателефонувати </a>
+onclick="fbq('track','Contact');">
+📞 Зателефонувати
+</a>
 
 </div>
 
@@ -165,19 +167,19 @@ onclick="fbq('track','Contact'); fbq('track','Lead'); fbq('trackCustom','CallCli
 
 <section class="products">
 
-<div class="card" onclick="fbq('track','ViewContent');">
+<div class="card" onclick="fbq('track','ViewContent',{content_name:'Пшенична 40',value:430,currency:'UAH'});">
     <div class="img-box"><img src="vodka.jpg"></div>
     <h3>Пшенична 40</h3>
     <p>10 л — 430 грн</p>
 </div>
 
-<div class="card" onclick="fbq('track','ViewContent');">
+<div class="card" onclick="fbq('track','ViewContent',{content_name:'Вишня шоколад мигдаль',value:630,currency:'UAH'});">
     <div class="img-box"><img src="cognac.jpg"></div>
     <h3>Класичний вишня шоколад мигдаль</h3>
     <p>10 л — 630 грн</p>
 </div>
 
-<div class="card" onclick="fbq('track','ViewContent');">
+<div class="card" onclick="fbq('track','ViewContent',{content_name:'Преміум 96.6',value:450,currency:'UAH'});">
     <div class="img-box"><img src="spirt.jpg"></div>
     <h3>Преміум дистилят 96.6</h3>
     <p>5 л — 450 грн</p>
@@ -190,16 +192,9 @@ onclick="fbq('track','Contact'); fbq('track','Lead'); fbq('trackCustom','CallCli
 </div>
 
 <a class="order-btn" href="https://t.me/spirt555"
-onclick="fbq('track','Contact'); fbq('track','Lead'); fbq('trackCustom','TelegramClick'); startQualityLead();">
-ЗАКАЗ </a>
-
-<script>
-function startQualityLead(){
-  setTimeout(function(){
-    fbq('trackCustom','QualifiedLead');
-  }, 5000);
-}
-</script>
+onclick="fbq('track','Lead',{content_name:'Telegram Order'});">
+ЗАКАЗ
+</a>
 
 </body>
 </html>
