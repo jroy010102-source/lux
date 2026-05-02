@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
@@ -37,7 +37,12 @@ body {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
     url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e') no-repeat center/cover;
 }
-header { text-align: center; padding: 40px 15px; }
+
+header {
+    text-align: center;
+    padding: 40px 15px;
+}
+
 header h1 { color: gold; margin: 0; font-size: 32px; }
 header h2 { color: gold; font-size: 18px; }
 header p { color: #ddd; }
@@ -135,46 +140,49 @@ header p { color: #ddd; }
 
 <div class="contact">
 
-<a class="viber" href="/go.html" onclick="fbq('track','Contact');">
+<a class="viber" href="viber://chat?number=380661460537"
+onclick="fbq('track','Contact');">
 📱 Viber
 </a>
 
-<a class="telegram" href="/go.html" onclick="fbq('track','InitiateCheckout');">
+<a class="telegram" href="https://t.me/spirt555"
+onclick="fbq('track','Lead',{content_name:'Telegram Order'});">
 ✈️ Telegram
 </a>
 
-<a class="call" href="tel:0661460537" onclick="fbq('track','Contact');">
+<a class="call" href="tel:0661460537"
+onclick="fbq('track','Contact');">
 📞 Зателефонувати
 </a>
 
 </div>
 
 <header>
-<h1>ПРОДУКЦІЯ ДЛЯ СВЯТ</h1>
-<h2>ШВИДКА ДОСТАВКА • 24/7 • УКРАЇНА</h2>
-<p>Замовлення через Telegram</p>
-<p style="color:#ffcc00; font-weight:bold;">Контакт: 0661460537</p>
-<p style="color:#ffcc00; font-weight:bold;">Для дорослих 18+</p>
+    <h1>ПРОДУКЦІЯ ДЛЯ СВЯТ</h1>
+    <h2>ШВИДКА ДОСТАВКА • 24/7 • УКРАЇНА</h2>
+    <p>Замовлення через Telegram</p>
+    <p style="color:#ffcc00; font-weight:bold;">Контакт: 0661460537</p>
+    <p style="color:#ffcc00; font-weight:bold;">Для дорослих 18+</p>
 </header>
 
 <section class="products">
 
-<div class="card" onclick="fbq('track','ViewContent',{content_name:'Пшенична 40'});">
-<div class="img-box"><img src="vodka.jpg"></div>
-<h3>Пшенична 40</h3>
-<p>10 л — 430 грн</p>
+<div class="card" onclick="fbq('track','ViewContent',{content_name:'Пшенична 40',value:430,currency:'UAH'});">
+    <div class="img-box"><img src="vodka.jpg"></div>
+    <h3>Пшенична 40</h3>
+    <p>10 л — 430 грн</p>
 </div>
 
-<div class="card" onclick="fbq('track','ViewContent',{content_name:'Вишня шоколад мигдаль'});">
-<div class="img-box"><img src="cognac.jpg"></div>
-<h3>Класичний вишня шоколад мигдаль</h3>
-<p>10 л — 630 грн</p>
+<div class="card" onclick="fbq('track','ViewContent',{content_name:'Вишня шоколад мигдаль',value:630,currency:'UAH'});">
+    <div class="img-box"><img src="cognac.jpg"></div>
+    <h3>Класичний вишня шоколад мигдаль</h3>
+    <p>10 л — 630 грн</p>
 </div>
 
-<div class="card" onclick="fbq('track','ViewContent',{content_name:'Преміум 96.6'});">
-<div class="img-box"><img src="spirt.jpg"></div>
-<h3>Преміум дистилят 96.6</h3>
-<p>5 л — 450 грн</p>
+<div class="card" onclick="fbq('track','ViewContent',{content_name:'Преміум 96.6',value:450,currency:'UAH'});">
+    <div class="img-box"><img src="spirt.jpg"></div>
+    <h3>Преміум дистилят 96.6</h3>
+    <p>5 л — 450 грн</p>
 </div>
 
 </section>
@@ -183,7 +191,8 @@ header p { color: #ddd; }
 ✔ Оплата при отриманні • ✔ Нова Пошта • ✔ Конфіденційно
 </div>
 
-<a class="order-btn" href="/go.html" onclick="fbq('track','InitiateCheckout');">
+<a class="order-btn" href="https://t.me/spirt555"
+onclick="fbq('track','Lead',{content_name:'Telegram Order'});">
 ЗАКАЗ
 </a>
 
