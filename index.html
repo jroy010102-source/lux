@@ -142,19 +142,20 @@ header p { color: #ddd; }
 
 <a class="viber"
 href="viber://chat?number=380661460537"
-onclick="fbq('track','Contact');">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','Contact');}">
 📱 Viber
 </a>
 
+<!-- 🔥 ОБНОВЛЕННЫЙ TELEGRAM БЕЗОПАСНЫЙ -->
 <a class="telegram"
 href="https://t.me/spirt555"
-onclick="fbq('track','InitiateCheckout');">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','InitiateCheckout');}">
 ✈️ Telegram
 </a>
 
 <a class="call"
 href="tel:0661460537"
-onclick="fbq('track','Contact');">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','Contact');}">
 📞 Зателефонувати
 </a>
 
@@ -171,21 +172,21 @@ onclick="fbq('track','Contact');">
 <section class="products">
 
 <div class="card"
-onclick="fbq('track','ViewContent',{content_name:'Пшенична 40',value:430,currency:'UAH'});">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','ViewContent',{content_name:'Пшенична 40',value:430,currency:'UAH'});}">
 <div class="img-box"><img src="vodka.jpg"></div>
 <h3>Пшенична 40</h3>
 <p>10 л — 430 грн</p>
 </div>
 
 <div class="card"
-onclick="fbq('track','ViewContent',{content_name:'Вишня шоколад'});">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','ViewContent',{content_name:'Вишня шоколад'});}">
 <div class="img-box"><img src="cognac.jpg"></div>
 <h3>Вишня шоколад</h3>
 <p>10 л — 630 грн</p>
 </div>
 
 <div class="card"
-onclick="fbq('track','ViewContent',{content_name:'Преміум 96.6'});">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','ViewContent',{content_name:'Преміум 96.6'});}">
 <div class="img-box"><img src="spirt.jpg"></div>
 <h3>Преміум 96.6</h3>
 <p>5 л — 450 грн</p>
@@ -199,7 +200,7 @@ onclick="fbq('track','ViewContent',{content_name:'Преміум 96.6'});">
 
 <a class="order-btn"
 href="https://t.me/spirt555"
-onclick="fbq('track','Lead',{content_name:'Order Button'});">
+onclick="if(typeof fbq !== 'undefined'){fbq('track','Lead',{content_name:'Order Button'});}">
 ЗАКАЗ
 </a>
 
